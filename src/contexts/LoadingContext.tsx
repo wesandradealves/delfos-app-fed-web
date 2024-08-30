@@ -1,12 +1,7 @@
 // contexts/LoadingContext.tsx
 import React, { createContext, useState, ReactNode } from 'react';
 
-interface LoadingContextProps {
-  isLoading: boolean;
-  setLoading: (loading: boolean) => void;
-}
-
-export const LoadingContext = createContext<LoadingContextProps>({
+export const LoadingContext = createContext<any>({
   isLoading: false,
   setLoading: () => {},
 });
