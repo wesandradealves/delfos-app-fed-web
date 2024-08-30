@@ -21,7 +21,9 @@ export default function RootLayout({
         <SessionProvider>
           <LoadingProvider>
             <Suspense fallback={<div>Loading...</div>}>
-              {children}
+              <div id="primary">
+                {children}
+              </div>
             </Suspense>
           </LoadingProvider>
         </SessionProvider>
