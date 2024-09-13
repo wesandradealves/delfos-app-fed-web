@@ -1,10 +1,12 @@
 "use client";
 import Link from "next/link";
+import { Content } from "./style";
 
 export default function Logo(props: any) {  
-  const Tag = `${props.tag ? props.tag : 'span'}` as keyof JSX.IntrinsicElements;
+  const Tag = `${props?.tag ? props.tag : 'span'}` as keyof JSX.IntrinsicElements;
 
-  return (<Tag className={`logo ${props?.className ? props?.className : ''}`}>  
+  return (<Content compact={props?.compact}>
+    <Tag className={`logo ${props?.className ? props?.className : ''}`}>  
     <Link href="/">
       {props?.compact ? <>
         <svg width="83" height="81" viewBox="0 0 83 81" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -37,5 +39,6 @@ export default function Logo(props: any) {
         </svg>
       </>}
     </Link>
-  </Tag>);
+  </Tag>
+  </Content>);
 };

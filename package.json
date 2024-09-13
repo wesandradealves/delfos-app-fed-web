@@ -17,13 +17,14 @@
     "axios": "^1.7.5",
     "next": "14.2.7",
     "next-auth": "^4.24.7",
+    "node-sass": "^9.0.0",
     "react": "^18",
     "react-dom": "^18",
-    "node-sass": "^9.0.0",
+    "react-hook-form": "^7.53.0",
     "sass": "^1.77.4",
     "sass-extract": "^3.0.0",
     "sass-extract-js": "^0.4.0",
-    "sass-extract-loader": "^1.1.0",    
+    "sass-extract-loader": "^1.1.0",
     "styled-components": "^6.1.12"
   },
   "devDependencies": {

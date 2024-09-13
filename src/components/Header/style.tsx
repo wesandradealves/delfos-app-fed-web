@@ -5,13 +5,21 @@ export const Content = styled.header`
 `;
 
 export const Container = styled.div`   
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: ${props => props.theme.general.gaps.default};
+`;
 
-    .logo {
-        svg {
-            width: 40px;
-            height: 40px;
-        }
-    }
+export const Nav = styled.nav`   
+
+`;
+
+export const NavList = styled.ul`   
+
+`;
+
+export const NavItem = styled.li`   
+
+`;
+
+export const Icon = styled.i`   
+
 `;
