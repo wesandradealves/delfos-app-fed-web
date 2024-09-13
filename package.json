@@ -19,7 +19,11 @@
     "next-auth": "^4.24.7",
     "react": "^18",
     "react-dom": "^18",
-    "sass": "^1.77.8",
+    "node-sass": "^9.0.0",
+    "sass": "^1.77.4",
+    "sass-extract": "^3.0.0",
+    "sass-extract-js": "^0.4.0",
+    "sass-extract-loader": "^1.1.0",    
     "styled-components": "^6.1.12"
   },
   "devDependencies": {

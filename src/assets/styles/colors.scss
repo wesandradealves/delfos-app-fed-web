@@ -1,0 +1,249 @@
+// Pallete
+
+$colors:(
+    primary: (
+        default: (
+            color: #191B41
+        ),        
+        color-50: (
+            color: #EEF4FF
+        ),
+        color-100: (
+            color: #E1EAFE
+        ),
+        color-200: (
+            color: #C9D9FC
+        ),
+        color-300: (
+            color: #A7BFFA
+        ),
+        color-400: (
+            color: #849CF5
+        ),
+        color-500: (
+            color: #6779ED
+        ),
+        color-600: (
+            color: #4A52E1
+        ),
+        color-700: (
+            color: #3C42C6
+        ),
+        color-800: (
+            color: #3338A0
+        ),
+        color-900: (
+            color: #30367F
+        )    
+    ),
+    secondary: (
+        default: (
+            color: #E2B524
+        ),        
+        color-50: (
+            color: #FCF9EA
+        ),
+        color-100: (
+            color: #F8F2C9
+        ),
+        color-200: (
+            color: #F2E496
+        ),
+        color-300: (
+            color: #EBCF59
+        ),
+        color-400: (
+            color: #E2B524
+        ),
+        color-500: (
+            color: #D3A11F
+        ),
+        color-600: (
+            color: #B67D18
+        ),
+        color-700: (
+            color: #925B16
+        ),
+        color-800: (
+            color: #79491A
+        ),
+        color-900: (
+            color: #673D1C
+        ),
+        color-950: (
+            color: #3C1F0C
+        )     
+    ),
+    gray: (     
+        color-50: (
+            color: #F5F5F5
+        ),
+        color-100: (
+            color: #EFEFEF
+        ),
+        color-200: (
+            color: #DCDCDC
+        ),
+        color-300: (
+            color: #BDBDBD
+        ),
+        color-400: (
+            color: #989898
+        ),
+        color-500: (
+            color: #7C7C7C
+        ),
+        color-600: (
+            color: #656565
+        ),
+        color-700: (
+            color: #525252
+        ),
+        color-800: (
+            color: #464646
+        ),
+        color-900: (
+            color: #3D3D3D
+        ),
+        color-950: (
+            color: #292929
+        )     
+    ),
+    dark: (
+        color-50: (
+            color: #424463
+        ),
+        color-100: (
+            color: #3E3F5F
+        ),
+        color-200: (
+            color: #3C3D5E
+        ),
+        color-300: (
+            color: #393B5C
+        ),
+        color-400: (
+            color: #353658
+        ),
+        color-500: (
+            color: #323456
+        ),
+        color-600: (
+            color: #2E3052
+        ),
+        color-700: (
+            color: #2B2D50
+        ),
+        color-800: (
+            color: #292B4E
+        ),
+        color-900: (
+            color: #25264B
+        )     
+    ),
+    success: (
+        color-50: (
+            color: #ECFDF3
+        ),
+        color-100: (
+            color: #D2F9E0
+        ),
+        color-200: (
+            color: #A9F1C7
+        ),
+        color-300: (
+            color: #71E4A7
+        ),
+        color-400: (
+            color: #46D38D
+        ),
+        color-500: (
+            color: #14B56B
+        ),
+        color-600: (
+            color: #089356
+        ),
+        color-700: (
+            color: #077548
+        ),
+        color-800: (
+            color: #085D3A
+        ),
+        color-900: (
+            color: #084C31
+        ),
+        color-950: (
+            color: #084C31
+        )     
+    ),
+    warning: (     
+        color-50: (
+            color: #FFFBEB
+        ),
+        color-100: (
+            color: #FEF4C7
+        ),
+        color-200: (
+            color: #FDE88A
+        ),
+        color-300: (
+            color: #FDDD6A
+        ),
+        color-400: (
+            color: #FCC323
+        ),
+        color-500: (
+            color: #F6A20A
+        ),
+        color-600: (
+            color: #DA7B05
+        ),
+        color-700: (
+            color: #B55608
+        ),
+        color-800: (
+            color: #92420E
+        ),
+        color-900: (
+            color: #78370F
+        ),
+        color-950: (
+            color: #451B03
+        )     
+    ),
+    error: (
+        color-50: (
+            color: #FFF1F2
+        ),
+        color-100: (
+            color: #FFE1E4
+        ),
+        color-200: (
+            color: #FFC7CC
+        ),
+        color-300: (
+            color: #FFA0A8
+        ),
+        color-400: (
+            color: #FF6270
+        ),
+        color-500: (
+            color: #F83B4C
+        ),
+        color-600: (
+            color: #E51D2F
+        ),
+        color-700: (
+            color: #C11423
+        ),
+        color-800: (
+            color: #A01420
+        ),
+        color-900: (
+            color: #841822
+        ),
+        color-950: (
+            color: #48070D
+        )     
+    )
+);
