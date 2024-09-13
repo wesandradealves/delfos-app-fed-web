@@ -1,9 +1,7 @@
 "use client";
 
-import Template from "@/app/template";
-
 function NotFoundPage() {
-	return <Template>Página não encontrada</Template>
+	return <>Página não encontrada</>
 }
 
 export default NotFoundPage
