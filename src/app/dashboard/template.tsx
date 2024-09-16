@@ -6,7 +6,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
     return (
         <Content className="flex h-full w-full flex-col">
             <Header />
-            <Dashboard className="flex-1">
+            <Dashboard className="flex-1 overflow-auto">
                 <Container className="flex flex-wrap items-stretch justify-start">
                     {children}
                 </Container>

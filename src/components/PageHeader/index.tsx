@@ -1,7 +1,19 @@
 "use client";
+import { Content, Icon, Title } from "@/components/PageHeader/style";
+import { PageHeaderProps } from "@/components/PageHeader/typo";
 
-import { Content } from "./style";
+export default function PageHeader({ 
+    children, 
+    className = '', 
+    ...props 
+  }: PageHeaderProps) {
+    return (
+      <Content className={`${props?.className} page-header flex items-center`} data-component="PageHeader">
+        {props?.icon && (
+          props?.icon.indexOf('svg') > 0 ? <Icon dangerouslySetInnerHTML={{ __html: props?.icon }} className="icon" /> : <Icon className={props?.icon} />
+        )}
 
-export default function PageHeader(props: any) {  
-  return (<Content data-component="PageHeader">Page Header</Content>);
-};
+        <Title>{children}</Title>
+      </Content>
+    );
+}

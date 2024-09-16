@@ -34,7 +34,7 @@ export default function RootLayout({
           <GlobalStyle/>
 
           <Suspense fallback={<div>Loading...</div>}>
-            <App id="primary" className="w-screen h-screen">
+            <App id="primary" className="w-screen h-screen overflow-hidden">
               <StyledJsxRegistry>
                 {children}
               </StyledJsxRegistry>

@@ -19,7 +19,7 @@ export const fontSize = {
             medium4: '2rem'   
         },
         normal: {
-            normal1: '28px',
+            normal1: '1.75rem',
             normal2: '1.5rem',
             normal3: '1.25rem',
             normal4: '1.125rem',
