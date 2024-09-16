@@ -5,13 +5,15 @@ import { GlobalStyle } from '@/app/style';
 import { ThemeProvider } from "styled-components";
 import { App } from "./style";
 
+export const theme = require('sass-extract-loader?{"plugins": ["sass-extract-js"]}!@/assets/styles/variables.scss');
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  const theme = require('sass-extract-loader?{"plugins": ["sass-extract-js"]}!@/assets/styles/variables.scss');
   console.log(theme);
+  
   return (
     <html lang="pt-br">
       <body suppressHydrationWarning={true}>
