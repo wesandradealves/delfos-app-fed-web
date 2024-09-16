@@ -1,5 +1,6 @@
 import styled, {css, createGlobalStyle} from "styled-components";
 
+
 export const Form = styled.form`   
     padding: ${props => props.theme.general.gaps.default};
     svg {
@@ -10,7 +11,4 @@ export const Form = styled.form`
 
 export const FormGroup = styled.div`   
     gap: 32px;
-    .btn {
-        min-width: 150px;
-    }
 `;

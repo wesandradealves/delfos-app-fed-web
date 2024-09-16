@@ -1,5 +1,6 @@
 import styled, {css, createGlobalStyle} from "styled-components";
 
+
 export const Content = styled.span`   
     .btn {
         padding: 16px 18px;
@@ -13,8 +14,8 @@ export const Content = styled.span`
         border-radius: ${props => props.theme.general.borderRadius.default};
         border: 0;
         &.primary {
-            background-color: ${props => props.theme.colors.secondary.color300.color};
-            color: ${props => props.theme.colors.primary.default.color};
+            background-color: ${props => props.theme.colors.secondary.color300};
+            color: ${props => props.theme.colors.primary.default};
         }        
     }
 `;

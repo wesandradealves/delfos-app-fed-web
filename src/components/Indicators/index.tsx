@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, ReactElement } from 'react';
-import DynamicComponent from '../DynamicComponent/DynamicComponent';
+import DynamicComponent from '@/components/DynamicComponent/DynamicComponent';
 import { camelCase } from '@/utils';
 
 export default function Indicators(props: any) {

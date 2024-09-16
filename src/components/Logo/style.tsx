@@ -1,5 +1,6 @@
 import styled, {css, createGlobalStyle} from "styled-components";
 
+
 interface Typo {
     compact?: any;
 }

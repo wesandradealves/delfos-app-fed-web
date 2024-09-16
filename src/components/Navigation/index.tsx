@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import { Nav, NavList, NavItem, Icon } from "./style";
+import { Nav, NavList, NavItem, Icon } from "@/components/Navigation/style";
 import Link from "next/link";
 
 export default function Navigation(props: any) {  
@@ -9,7 +9,7 @@ export default function Navigation(props: any) {
   return (
     <>
         {props?.data && (
-            <Nav className="flex-1">
+            <Nav data-component="Navigation" className="flex-1">
               <NavList className="flex">
                   {props?.data.map((item: any, index: any) => (
                     <NavItem key={index}>

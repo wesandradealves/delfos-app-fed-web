@@ -24,9 +24,6 @@
     "react-dom": "^*",
     "react-hook-form": "^7.53.0",
     "sass": "^1.77.4",
-    "sass-extract": "^3.0.0",
-    "sass-extract-js": "^0.4.0",
-    "sass-extract-loader": "^1.1.0",
     "styled-components": "^6.1.12"
   },
   "devDependencies": {

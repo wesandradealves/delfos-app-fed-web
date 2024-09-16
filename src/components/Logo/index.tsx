@@ -1,11 +1,11 @@
 "use client";
 import Link from "next/link";
-import { Content } from "./style";
+import { Content } from "@/components/Logo/style";
 
 export default function Logo(props: any) {  
   const Tag = `${props?.tag ? props.tag : 'span'}` as keyof JSX.IntrinsicElements;
 
-  return (<Content compact={props?.compact}>
+  return (<Content data-component="Logo" compact={props?.compact}>
     <Tag className={`logo ${props?.className ? props?.className : ''}`}>  
     <Link href="/">
       {props?.compact ? <>

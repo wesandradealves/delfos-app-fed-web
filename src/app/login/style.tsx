@@ -6,7 +6,11 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const Content = styled.div`   
-
+    .form {
+        .btn {
+            min-width: 150px;
+        }
+    }
 `;
 
 export const Aside = styled.aside`   
@@ -23,7 +27,7 @@ export const Aside = styled.aside`
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: ${props => props.theme.colors.primary.default.color};
+        background-color: ${props => props.theme.colors.primary.default};
         content: '';
         z-index: 1;
         opacity: .7;
@@ -31,11 +35,8 @@ export const Aside = styled.aside`
 `;
 
 export const Title = styled.h1`   
-    font-size: ${props => props.theme.fontSize.text.medium.medium3};
-    @media screen and (min-width: ${props => props.theme.breakpoints.desktop.lg}) {
-        font-size: ${props => props.theme.fontSize.display.display2};
-    }
-    color: ${props => props.theme.colors.secondary.default.color};
+    font-size: ${props => props.theme.fontSize.display.display2};
+    color: ${props => props.theme.colors.secondary.default};
     line-height: 130%;
     font-weight: 600;
     text-align: right;

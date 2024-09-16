@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, ReactElement } from 'react';
-import { Indicator } from '../style';
+import { Indicator } from '@/components/Indicators/style';
 
 export default function Ins(props: any) {
     return (

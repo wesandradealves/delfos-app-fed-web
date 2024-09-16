@@ -1,14 +1,14 @@
 "use client";
 import { Container, Content, Toolbar, UpdatedAt, Icon, Avatar, Text, Hello, Welcome, Headline } from "./style";
-import Logo from "../Logo";
+import Logo from "@/components/Logo";
 import Link from "next/link";
-import Navigation from "../Navigation";
+import Navigation from "@/components/Navigation";
 import { usePathname } from 'next/navigation';
 
 export default function Header(props: any) {  
   const pathname = usePathname();
 
-  return (<Content className="header w-full flex flex-col">
+  return (<Content data-component="Header" className="header w-full flex flex-col">
     <Container className="mx-auto w-full flex items-center justify-between">
         <Logo compact={1} tag="h1" />
         <Navigation pathname={pathname} data={[

@@ -1,6 +1,6 @@
 "use client";
-import { Content } from "./style";
-import { ButtonProps } from "./typo";
+import { Content } from "@/components/Button/style";
+import { ButtonProps } from "@/components/Button/typo";
 
 export default function Button({ 
     children, 
@@ -14,6 +14,7 @@ export default function Button({
     return (
       <Content className="flex">
         <Tag 
+          data-component="Button"
           className={`btn ${className}`}
           {...(tag === 'a' && href ? { href } : {})} 
           {...props} // Spread remaining props
