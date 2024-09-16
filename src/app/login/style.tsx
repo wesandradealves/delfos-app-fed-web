@@ -6,16 +6,7 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const Content = styled.div`   
-    @keyframes opacity {
-        from {
-            opacity: 0;
-        }
 
-        to {
-            opacity: 1;
-        }
-    }
-    animation: opacity 600ms linear forwards;
 `;
 
 export const Aside = styled.aside`   
@@ -40,17 +31,6 @@ export const Aside = styled.aside`
 `;
 
 export const Title = styled.h1`   
-    @keyframes title {
-        from {
-            opacity: 0;
-            top: -35px;
-        }
-
-        to {
-            opacity: 1;
-            top: 0;
-        }
-    }      
     font-size: ${props => props.theme.fontSize.text.medium.medium3};
     @media screen and (min-width: ${props => props.theme.breakpoints.desktop.lg}) {
         font-size: ${props => props.theme.fontSize.display.display2};
@@ -60,22 +40,9 @@ export const Title = styled.h1`
     font-weight: 600;
     text-align: right;
     position: relative;
-    animation: title 900ms linear forwards;
 `;
 
 export const Arrow = styled.svg`   
-    @keyframes opacity {
-        from {
-            right: -100px;
-            opacity: 0;
-        }
-
-        to {
-            right: -90px;
-            opacity: 1;
-        }
-    }
-    animation: opacity 600ms linear forwards;
     right: -90px;
     position: absolute;
     bottom: 0;

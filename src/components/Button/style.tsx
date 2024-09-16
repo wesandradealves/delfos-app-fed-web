@@ -12,12 +12,9 @@ export const Content = styled.span`
         font-size: ${props => props.theme.fontSize.text.normal.normal4};
         border-radius: ${props => props.theme.general.borderRadius.default};
         border: 0;
-    }
-
-    &.primary {
-        .btn {
+        &.primary {
             background-color: ${props => props.theme.colors.secondary.color300.color};
             color: ${props => props.theme.colors.primary.default.color};
-        }
+        }        
     }
 `;
