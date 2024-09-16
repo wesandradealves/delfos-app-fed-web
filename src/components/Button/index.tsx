@@ -12,9 +12,9 @@ export default function Button({
     const Tag = tag as keyof JSX.IntrinsicElements;
 
     return (
-      <Content className={`${className}`}>
+      <Content className="flex">
         <Tag 
-          className="btn"
+          className={`btn ${className}`}
           {...(tag === 'a' && href ? { href } : {})} 
           {...props} // Spread remaining props
         >

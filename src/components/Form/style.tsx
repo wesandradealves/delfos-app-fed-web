@@ -6,11 +6,11 @@ export const Form = styled.form`
         max-width: 100%;
     }
     gap: 56px;
-    .btn {
-        min-width: 150px;
-    }
 `;
 
 export const FormGroup = styled.div`   
     gap: 32px;
+    .btn {
+        min-width: 150px;
+    }
 `;

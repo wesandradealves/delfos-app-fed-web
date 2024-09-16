@@ -7,7 +7,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
         <Content className="flex h-full w-full flex-col">
             <Header />
             <Dashboard className="flex-1">
-                <Container>
+                <Container className="flex flex-wrap items-stretch justify-start">
                     {children}
                 </Container>
             </Dashboard>

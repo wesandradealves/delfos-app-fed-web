@@ -1,7 +1,7 @@
 import styled, {css, createGlobalStyle} from "styled-components";
 
 interface Typo {
-    compact?: boolean;
+    compact?: any;
 }
 
 export const Content = styled.div<Typo>`

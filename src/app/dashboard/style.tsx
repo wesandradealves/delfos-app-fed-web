@@ -1,16 +1,7 @@
 import styled, {css} from "styled-components";
 
 export const Content = styled.div`   
-    @keyframes opacity {
-        from {
-            opacity: 0;
-        }
 
-        to {
-            opacity: 1;
-        }
-    }
-    animation: opacity 600ms linear forwards;
 `;
 
 export const Container = styled.div`   

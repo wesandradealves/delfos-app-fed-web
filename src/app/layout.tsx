@@ -17,6 +17,7 @@ export default function RootLayout({
       <body suppressHydrationWarning={true}>
         <script async src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <title>Delfos - Centro de Monitoramento de Clientes</title>
         <ThemeProvider theme={theme}>
           <Suspense fallback={<div>Loading...</div>}>
             <App id="primary" className="w-screen h-screen">
