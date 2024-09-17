@@ -9,10 +9,14 @@ export const Content = styled.div`
 
 export const Icon = styled.i`
     width: auto;
-    height: 22px;
+    color: ${props => props.theme.colors.secondary.color300};
+    font-size: ${props => props.theme.fontSize.text.normal.normal8};
     svg {
-        height: inherit;
+        height: 22px;
         width: inherit;
+        fill {
+            path: ${props => props.theme.colors.secondary.color300}
+        }
     }
 `;
 
