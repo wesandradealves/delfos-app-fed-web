@@ -9,6 +9,7 @@ import { fontSize } from '@/assets/styles/fontSize';
 import { colors } from '@/assets/styles/colors';
 import { breakpoints } from '@/assets/styles/breakpoints';
 import StyledJsxRegistry from "./registry";
+import { AnimatePresence } from 'framer-motion';
 
 const theme = {
   general,
@@ -36,7 +37,13 @@ export default function RootLayout({
           <Suspense fallback={<div>Loading...</div>}>
             <App id="primary" className="w-screen h-screen overflow-hidden">
               <StyledJsxRegistry>
-                {children}
+                <AnimatePresence 
+                  mode="wait" 
+                  initial={true}
+                  onExitComplete={() => window.scrollTo(0, 0)}
+                  >
+                  {children}
+                </AnimatePresence>
               </StyledJsxRegistry>
             </App>
           </Suspense>

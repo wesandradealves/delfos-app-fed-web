@@ -2,7 +2,7 @@ import styled, {css, createGlobalStyle} from "styled-components";
 
 
 export const Content = styled.header`   
-
+    position: relative;
 `;
 
 export const Hello = styled.div`   
@@ -67,6 +67,7 @@ export const Text = styled.p`
 export const Container = styled.div`   
     padding: ${props => props.theme.general.gaps.default};
     gap: 0 24px;
+    position: relative;
     &:not(:first-of-type) {
         padding-top: calc(32px/2)
     }
