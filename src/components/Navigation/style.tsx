@@ -12,7 +12,7 @@ export const NavList = styled.ul`
 export const Icon = styled.i`   
     svg {
         path {
-            fill: ${props => props.theme.colors.color250};
+            fill: ${props => props.theme.colors.primary.color250};
         }
     }
 `;
@@ -21,7 +21,7 @@ export const Arrow = styled.span`
     position: relative;
     svg {
         path {
-            fill: ${props => props.theme.fontSize.text.normal.normal4}
+            fill: ${props => props.theme.colors.primary.color250}}
         }
     }
 `;
@@ -75,7 +75,7 @@ export const SubmenuItem = styled.li`
 export const NavItem = styled.li`   
     font-size: ${props => props.theme.fontSize.text.normal.normal4};
     font-weight: 600;
-    color: ${props => props.theme.colors.color250};
+    color: ${props => props.theme.colors.primary.color250};
 
     &.current,
     &:hover {
