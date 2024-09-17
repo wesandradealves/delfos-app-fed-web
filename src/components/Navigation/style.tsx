@@ -17,6 +17,15 @@ export const Icon = styled.i`
     }
 `;
 
+export const Arrow = styled.span`  
+    position: relative;
+    svg {
+        path {
+            fill: ${props => props.theme.fontSize.text.normal.normal4}
+        }
+    }
+`;
+
 export const Submenu = styled.ul`   
     position: absolute;
     top: calc(100% + 8px);
@@ -58,7 +67,7 @@ export const SubmenuItem = styled.li`
                         fill: ${props => props.theme.colors.secondary.color300}
                     }
                 }
-            }        
+            }      
         } 
     }
 `;
@@ -80,18 +89,31 @@ export const NavItem = styled.li`
                         fill: ${props => props.theme.colors.secondary.color300}
                     }
                 }
-            }        
+            }     
+                
+            > ${Arrow} {
+                svg {
+                    path {
+                        fill: ${props => props.theme.colors.secondary.color300};       
+                    }                 
+                }
+            }
         }
     }       
 
-    > .link {
+    >.link {
         gap: 12px;
         padding: 16px 20px;
     }
 
     &:hover {
-        ${Submenu} {
+        >${Submenu} {
             display: block;
+        }
+        >.link {
+            ${Arrow} {
+                transform: rotate(180deg);
+            } 
         }
     }
 `;
