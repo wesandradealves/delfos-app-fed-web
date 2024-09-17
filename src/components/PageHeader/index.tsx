@@ -8,7 +8,7 @@ export default function PageHeader({
     ...props 
   }: PageHeaderProps) {
     return (
-      <Content className={`${props?.className} page-header flex items-center`} data-component="PageHeader">
+      <Content className={`page-header flex items-center w-full`} data-component="PageHeader">
         {props?.icon && (
           props?.icon.indexOf('svg') > 0 ? <Icon dangerouslySetInnerHTML={{ __html: props?.icon }} className="icon" /> : <Icon className={props?.icon} />
         )}

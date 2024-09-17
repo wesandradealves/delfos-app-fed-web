@@ -18,6 +18,7 @@ export default function CallCenter() {
       '>
         Call Center
       </PageHeader>  
+      
       <Indicators id="ins" className="w-full" />
     </>
   )

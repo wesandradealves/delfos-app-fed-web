@@ -19,7 +19,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
                 <Header />
                 <Dashboard className="flex-1 overflow-auto">
                     <Container className="flex flex-wrap items-stretch justify-start">
-                            {children}
+                        {children}
                     </Container>
                 </Dashboard>
             </Content>
