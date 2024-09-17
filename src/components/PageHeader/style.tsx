@@ -9,7 +9,7 @@ export const Content = styled.div`
 
 export const Icon = styled.i`
     width: auto;
-    height: 30px;
+    height: 22px;
     svg {
         height: inherit;
         width: inherit;

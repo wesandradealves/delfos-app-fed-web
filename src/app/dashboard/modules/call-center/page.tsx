@@ -19,7 +19,10 @@ export default function CallCenter() {
         Call Center
       </PageHeader>  
       
-      <Indicators id="ins" className="w-full" />
+      <Indicators 
+      title="Fila INS"
+      description="Índice de satisfação do serviço. Abaixo de 85% é um cenário crítico. Informações em tempo real."
+      id="ins" className="w-full" />
     </>
   )
 }

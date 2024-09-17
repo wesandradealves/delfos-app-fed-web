@@ -25,7 +25,8 @@ export const fontSize = {
             normal4: '1.125rem',
             normal5: '1rem',
             normal6: '.875rem',
-            normal7: '12px',                                                                                                
+            normal7: '.75rem',      
+            normal8: '1.375rem'                                                                                          
         }
     }    
 };

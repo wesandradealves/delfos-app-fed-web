@@ -8,7 +8,12 @@ export default function DynamicComponent(props: any) {
   const importComponent = async () => {
     const module = await import(`@/components/Indicators/${props?.componentName}/${props?.componentName}`);
     const DynamicComponent = module.default;
-    setImportedComponent(<DynamicComponent id={props?.componentName} className={props?.className} />);
+    setImportedComponent(
+      <DynamicComponent 
+      id={props?.componentName} 
+      title={props?.title}
+      description={props?.description}
+      className={props?.className} />);
   };  
 
   useEffect(() => {
