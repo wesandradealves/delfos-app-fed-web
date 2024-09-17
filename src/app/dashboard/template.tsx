@@ -12,7 +12,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
             transition={{
                 type: "spring",
                 stiffness: 260,
-                damping: 20,
+                damping: 90,
             }}
             >          
             <Content className="flex h-full w-full flex-col">

@@ -12,7 +12,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
             transition={{
                 type: "spring",
                 stiffness: 260,
-                damping: 20,
+                damping: 90,
             }}
             >          
             <Content className="flex h-full w-full items-stretch">
@@ -29,7 +29,18 @@ export default function Template({ children }: { children: React.ReactNode }) {
                     </Arrow>
                 </Aside>      
                 <main className="flex-1 flex items-center justify-center">
-                    {children}
+                    <motion.div
+                        initial={{ x: -300, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        exit={{ x: 300, opacity: 0 }}
+                        transition={{
+                            type: "spring",
+                            stiffness: 260,
+                            damping: 100,
+                        }}
+                        > 
+                        {children}
+                    </motion.div>
                 </main>
             </Content>
         </motion.div>
