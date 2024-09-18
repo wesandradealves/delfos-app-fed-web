@@ -27,7 +27,7 @@ export const Aside = styled.aside`
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: ${props => props.theme.colors.primary.default};
+        background-color: ${props => props.theme._colors.primary.default};
         content: '';
         z-index: 1;
         opacity: .7;
@@ -35,8 +35,8 @@ export const Aside = styled.aside`
 `;
 
 export const Title = styled.h1`   
-    font-size: ${props => props.theme.fontSize.display.display2};
-    color: ${props => props.theme.colors.secondary.default};
+    font-size: ${props => props.theme._fontSize.display.display2};
+    color: ${props => props.theme._colors.secondary.default};
     line-height: 130%;
     font-weight: 600;
     text-align: right;
@@ -47,7 +47,7 @@ export const Arrow = styled.svg`
     right: -90px;
     position: absolute;
     bottom: 0;
-    @media screen and (min-width: ${props => props.theme.breakpoints.desktop.fullhd}) {
+    @media screen and (min-width: ${props => props.theme._breakpoints.desktop.fullhd}) {
         position: absolute;
         bottom: 120px;
     }

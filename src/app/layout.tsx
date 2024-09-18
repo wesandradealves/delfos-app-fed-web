@@ -4,18 +4,15 @@ import { Suspense } from 'react';
 import { GlobalStyle } from '@/app/style';
 import { ThemeProvider } from "styled-components";
 import { App } from "./style";
-import { general } from '@/assets/styles/general';
-import { fontSize } from '@/assets/styles/fontSize';
-import { colors } from '@/assets/styles/colors';
-import { breakpoints } from '@/assets/styles/breakpoints';
 import StyledJsxRegistry from "./registry";
 import { AnimatePresence } from 'framer-motion';
+import { _colors, _fontSize, _breakpoints, _general } from '@/assets/styles/variables';
 
 const theme = {
-  general,
-  fontSize,
-  colors,
-  breakpoints
+  _general,
+  _fontSize,
+  _colors,
+  _breakpoints
 };
 
 export default function RootLayout({

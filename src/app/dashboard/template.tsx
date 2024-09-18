@@ -8,7 +8,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
             className="flex h-full w-full flex-col"
             initial={{ x: 0, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            exit={{ x: 300, opacity: 0 }}
+            exit={{ x: 0, opacity: 0 }}
             transition={{
                 type: "spring",
                 stiffness: 260,

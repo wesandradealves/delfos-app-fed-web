@@ -4,7 +4,7 @@ import bg from '@/assets/img/bg.jpg';
 
 export const Content = styled.div`   
     line-height: 1.4;
-    color: ${props => props.theme.colors.secondary.default};
+    color: ${props => props.theme._colors.secondary.default};
     gap: 12px 0;
     background: url(${bg.src}) center 0 / cover no-repeat;
     > * {
@@ -17,7 +17,7 @@ export const Content = styled.div`
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: ${props => props.theme.colors.primary.default};
+        background-color: ${props => props.theme._colors.primary.default};
         content: '';
         z-index: 1;
         opacity: .85;
@@ -30,11 +30,11 @@ export const Content = styled.div`
 
 export const Error = styled.h1`   
     font-weight: 700;
-    font-size: ${props => props.theme.fontSize.text.large.large3};
+    font-size: ${props => props.theme._fontSize.text.large.large3};
 `;
 
 export const Text = styled.p`   
     font-weight: 300;
-    font-size: ${props => props.theme.fontSize.text.normal.normal5};
+    font-size: ${props => props.theme._fontSize.text.normal.normal5};
     margin-bottom: 36px;
 `;

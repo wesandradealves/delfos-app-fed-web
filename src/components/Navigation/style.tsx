@@ -12,7 +12,7 @@ export const NavList = styled.ul`
 export const Icon = styled.i`   
     svg {
         path {
-            fill: ${props => props.theme.colors.primary.color250};
+            fill: ${props => props.theme._colors.primary.color250};
         }
     }
 `;
@@ -21,7 +21,7 @@ export const Arrow = styled.span`
     position: relative;
     svg {
         path {
-            fill: ${props => props.theme.colors.primary.color250}}
+            fill: ${props => props.theme._colors.primary.color250}}
         }
     }
 `;
@@ -40,7 +40,7 @@ export const Submenu = styled.ul`
 
 export const SubmenuItem = styled.li`   
     padding: 16px 18px;
-    font-size: ${props => props.theme.fontSize.text.normal.normal4};
+    font-size: ${props => props.theme._fontSize.text.normal.normal4};
     font-weight: 600;
     color: white;
 
@@ -48,7 +48,7 @@ export const SubmenuItem = styled.li`
         gap: 0 12px;
     }
 
-    ${Icon} {
+    .icon {
         svg {
             path {
                 fill: white
@@ -58,13 +58,13 @@ export const SubmenuItem = styled.li`
         
     &.current,
     &:hover {
-        color: ${props => props.theme.colors.secondary.color300};
+        color: ${props => props.theme._colors.secondary.color300};
 
         > .link {
-            > ${Icon} {
+            > .icon {
                 svg {
                     path {
-                        fill: ${props => props.theme.colors.secondary.color300}
+                        fill: ${props => props.theme._colors.secondary.color300}
                     }
                 }
             }      
@@ -73,20 +73,20 @@ export const SubmenuItem = styled.li`
 `;
 
 export const NavItem = styled.li`   
-    font-size: ${props => props.theme.fontSize.text.normal.normal4};
+    font-size: ${props => props.theme._fontSize.text.normal.normal4};
     font-weight: 600;
-    color: ${props => props.theme.colors.primary.color250};
+    color: ${props => props.theme._colors.primary.color250};
 
     &.current,
     &:hover {
         background-color: rgba(255,255,255,.05);
         border-radius: 8px;
-        color: ${props => props.theme.colors.secondary.color300};
+        color: ${props => props.theme._colors.secondary.color300};
         > .link {
-            > ${Icon} {
+            > .icon {
                 svg {
                     path {
-                        fill: ${props => props.theme.colors.secondary.color300}
+                        fill: ${props => props.theme._colors.secondary.color300}
                     }
                 }
             }     
@@ -94,7 +94,7 @@ export const NavItem = styled.li`
             > ${Arrow} {
                 svg {
                     path {
-                        fill: ${props => props.theme.colors.secondary.color300};       
+                        fill: ${props => props.theme._colors.secondary.color300};       
                     }                 
                 }
             }

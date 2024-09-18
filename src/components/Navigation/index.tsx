@@ -1,7 +1,7 @@
 "use client";
-import { useEffect } from "react";
-import { Nav, NavList, NavItem, Icon, Submenu, SubmenuItem, Arrow } from "@/components/Navigation/style";
+import { Nav, NavList, NavItem, Submenu, SubmenuItem, Arrow } from "@/components/Navigation/style";
 import Link from "next/link";
+import Icon from "@/components/Icon";
 
 export default function Navigation(props: any) {  
   const classNames = require('classnames');
@@ -24,13 +24,7 @@ export default function Navigation(props: any) {
                   className="flex items-center link"
                   href={item?.url}
                 >
-                  {item?.icon && (
-                    item?.icon.indexOf('svg') > 0 ? (
-                      <Icon dangerouslySetInnerHTML={{ __html: item?.icon }} className="icon" />
-                    ) : (
-                      <Icon className={item?.icon} />
-                    )
-                  )}
+                  {item?.icon && (<Icon data={item?.icon} />)}
 
                   {item?.label}
 
@@ -54,13 +48,7 @@ export default function Navigation(props: any) {
                         key={subIndex}
                       >
                         <Link className="flex items-center link" href={subItem?.url}>
-                          {subItem?.icon && (
-                            subItem?.icon.indexOf('svg') > 0 ? (
-                              <Icon dangerouslySetInnerHTML={{ __html: subItem?.icon }} className="icon" />
-                            ) : (
-                              <Icon className={subItem?.icon} />
-                            )
-                          )}
+                          {item?.icon && (<Icon data={subItem?.icon} />)}                          
                           {subItem?.label}
                         </Link>
                       </SubmenuItem>

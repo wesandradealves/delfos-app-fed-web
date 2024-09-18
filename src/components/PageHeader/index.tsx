@@ -1,6 +1,7 @@
 "use client";
-import { Content, Icon, Title } from "@/components/PageHeader/style";
+import { Content, Title } from "@/components/PageHeader/style";
 import { PageHeaderProps } from "@/components/PageHeader/typo";
+import Icon from "@/components/Icon";
 
 export default function PageHeader({ 
     children, 
@@ -9,9 +10,7 @@ export default function PageHeader({
   }: PageHeaderProps) {
     return (
       <Content className={`page-header flex items-center w-full`} data-component="PageHeader">
-        {props?.icon && (
-          props?.icon.indexOf('svg') > 0 ? <Icon dangerouslySetInnerHTML={{ __html: props?.icon }} className="icon" /> : <Icon className={props?.icon} />
-        )}
+        {props?.icon && (<Icon data={props?.icon} />)}
 
         <Title>{children}</Title>
       </Content>
