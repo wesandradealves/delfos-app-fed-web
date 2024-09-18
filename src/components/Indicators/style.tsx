@@ -4,7 +4,7 @@ import styled, {css, createGlobalStyle} from "styled-components";
 export const Indicator = styled.section`   
     border-radius: 8px;
     padding: 36px;
-    gap: 24px 0;
+    gap: 28px 0;
     background-color: ${props => props.theme._colors.dark.color900};
 `;
 

@@ -11,5 +11,8 @@ export const Container = styled.div`
 `;
 
 export const Dashboard = styled.main`   
-
+    .rcs-inner-handle {
+        background-color: ${props => props.theme._colors.secondary.color300};
+        border-radius: 0;
+    }
 `;

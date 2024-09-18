@@ -3,6 +3,8 @@ import { Content, Dashboard, Container } from "@/app/dashboard/style";
 import Header from "@/components/Header";
 import Hello from "@/components/Hello";
 import { motion } from "framer-motion";
+import { CustomScroll } from "react-custom-scroll";
+
 export default function Template({ children }: { children: React.ReactNode }) {
     return (
         <motion.div
@@ -18,11 +20,13 @@ export default function Template({ children }: { children: React.ReactNode }) {
             >          
             <Content className="flex h-full w-full flex-col">
                 <Header />
-                <Dashboard className="flex-1 overflow-auto">
-                    <Hello />
-                    <Container className="flex flex-wrap items-stretch justify-start">
-                        {children}
-                    </Container>
+                <Dashboard className="flex-1 overflow-hidden">
+                    <CustomScroll className="w-full" heightRelativeToParent="100%">
+                        <Hello />
+                        <Container className="flex flex-wrap items-stretch justify-start">
+                            {children}
+                        </Container>
+                    </CustomScroll>
                 </Dashboard>
             </Content>
         </motion.div>

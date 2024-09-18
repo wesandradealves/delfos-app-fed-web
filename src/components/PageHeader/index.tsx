@@ -6,12 +6,12 @@ import Icon from "@/components/Icon";
 export default function PageHeader({ 
     children, 
     className = '', 
+    icon,
     ...props 
   }: PageHeaderProps) {
     return (
       <Content className={`page-header flex items-center w-full flex-wrap`} data-component="PageHeader">
-        {props?.icon && (<Icon data={props?.icon} />)}
-
+        {icon && (<Icon data={icon} />)}
         <Title>{children}</Title>
       </Content>
     );
