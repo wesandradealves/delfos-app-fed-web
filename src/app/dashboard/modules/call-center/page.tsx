@@ -10,6 +10,7 @@ export default function CallCenter() {
       
       <Indicators 
       title="Fila INS"
+      openTickets={true}
       description="Índice de satisfação do serviço. Abaixo de 85% é um cenário crítico. Informações em tempo real."
       id="ins" className="w-full" />
     </>

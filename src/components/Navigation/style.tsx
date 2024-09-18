@@ -26,16 +26,19 @@ export const Arrow = styled.span`
     }
 `;
 
-export const Submenu = styled.ul`   
+export const Submenu = styled.div`   
     position: absolute;
-    top: calc(100% + 8px);
+    top: 100%;
+    padding-top: 8px;
     left: 0;
     width: 229px;
-    padding: 12px;
-    background-color: rgba(255,255,255,.05);
-    border-radius: 8px;    
     z-index: 10;
-    display: none;
+`;
+
+export const SubmenuNav = styled.ul`   
+    padding: 12px;
+    background-color: ${props => props.theme._colors.dark.color900};
+    border-radius: 8px;  
 `;
 
 export const SubmenuItem = styled.li`   
@@ -44,7 +47,7 @@ export const SubmenuItem = styled.li`
     font-weight: 600;
     color: white;
 
-    > .link {
+    >  .link {
         gap: 0 12px;
     }
 
@@ -60,7 +63,7 @@ export const SubmenuItem = styled.li`
     &:hover {
         color: ${props => props.theme._colors.secondary.color300};
 
-        > .link {
+        >  .link {
             > .icon {
                 svg {
                     path {
@@ -79,7 +82,7 @@ export const NavItem = styled.li`
 
     &.current,
     &:hover {
-        background-color: rgba(255,255,255,.05);
+        background-color: ${props => props.theme._colors.dark.color900};
         border-radius: 8px;
         color: ${props => props.theme._colors.secondary.color300};
         > .link {
@@ -101,16 +104,16 @@ export const NavItem = styled.li`
         }
     }       
 
-    >.link {
+    > .link {
         gap: 12px;
         padding: 16px 20px;
     }
 
     &:hover {
-        >${Submenu} {
+        > ${Submenu} {
             display: block;
         }
-        >.link {
+        > .link {
             ${Arrow} {
                 transform: rotate(180deg);
             } 

@@ -1,6 +1,7 @@
 "use client";
 import { Content, Dashboard, Container } from "@/app/dashboard/style";
 import Header from "@/components/Header";
+import Hello from "@/components/Hello";
 import { motion } from "framer-motion";
 export default function Template({ children }: { children: React.ReactNode }) {
     return (
@@ -18,6 +19,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
             <Content className="flex h-full w-full flex-col">
                 <Header />
                 <Dashboard className="flex-1 overflow-auto">
+                    <Hello />
                     <Container className="flex flex-wrap items-stretch justify-start">
                         {children}
                     </Container>

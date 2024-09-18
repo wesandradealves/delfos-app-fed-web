@@ -12,6 +12,7 @@ export default function DynamicComponent(props: any) {
       <DynamicComponent 
       id={props?.componentName} 
       title={props?.title}
+      openTickets={props?.openTickets}
       description={props?.description}
       className={props?.className} />);
   };  

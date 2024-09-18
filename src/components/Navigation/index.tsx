@@ -1,5 +1,5 @@
 "use client";
-import { Nav, NavList, NavItem, Submenu, SubmenuItem, Arrow } from "@/components/Navigation/style";
+import { Nav, NavList, NavItem, Submenu, SubmenuItem, Arrow, SubmenuNav } from "@/components/Navigation/style";
 import Link from "next/link";
 import Icon from "@/components/Icon";
 
@@ -36,23 +36,25 @@ export default function Navigation(props: any) {
                 </Link>
 
                 {item?.below && (
-                  <Submenu className="submenu">
-                    {item?.below.map((subItem: any, subIndex: any) => (
-                      <SubmenuItem 
-                        className={classNames(
-                          `flex items-center`,
-                          {
-                            'current': props?.pathname == subItem?.url
-                          }
-                        )}
-                        key={subIndex}
-                      >
-                        <Link className="flex items-center link" href={subItem?.url}>
-                          {item?.icon && (<Icon data={subItem?.icon} />)}                          
-                          {subItem?.label}
-                        </Link>
-                      </SubmenuItem>
-                    ))}
+                  <Submenu className="submenu hidden">
+                    <SubmenuNav className="block w-full">
+                      {item?.below.map((subItem: any, subIndex: any) => (
+                        <SubmenuItem 
+                          className={classNames(
+                            `flex items-center`,
+                            {
+                              'current': props?.pathname == subItem?.url
+                            }
+                          )}
+                          key={subIndex}
+                        >
+                          <Link className="flex items-center link" href={subItem?.url}>
+                            {item?.icon && (<Icon data={subItem?.icon} />)}                          
+                            {subItem?.label}
+                          </Link>
+                        </SubmenuItem>
+                      ))}
+                    </SubmenuNav>
                   </Submenu>
                 )}
               </NavItem>

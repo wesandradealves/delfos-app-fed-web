@@ -4,5 +4,6 @@ export interface ButtonProps {
   href?: string; // For 'a' tags
   label?: string; // Optional label
   className?: string; 
+  icon?: string; 
   [key: string]: any; // To accept other props
 }
