@@ -10,7 +10,7 @@ export default function Navigation(props: any) {
     <>
       {props?.data && (
         <Nav data-component="Navigation" className="flex-1 navigation">
-          <NavList className="flex">
+          <NavList className="flex flex-wrap">
             {props?.data.map((item: any, index: any) => (
               <NavItem 
                 className={classNames(
@@ -21,7 +21,7 @@ export default function Navigation(props: any) {
                 )}  
                 key={index}>
                 <Link 
-                  className="flex items-center link"
+                  className="flex flex-wrap items-center link"
                   href={item?.url}
                 >
                   {item?.icon && (<Icon data={item?.icon} />)}
@@ -41,14 +41,14 @@ export default function Navigation(props: any) {
                       {item?.below.map((subItem: any, subIndex: any) => (
                         <SubmenuItem 
                           className={classNames(
-                            `flex items-center`,
+                            `flex flex-wrap items-center`,
                             {
                               'current': props?.pathname == subItem?.url
                             }
                           )}
                           key={subIndex}
                         >
-                          <Link className="flex items-center link" href={subItem?.url}>
+                          <Link className="flex flex-wrap items-center link" href={subItem?.url}>
                             {item?.icon && (<Icon data={subItem?.icon} />)}                          
                             {subItem?.label}
                           </Link>

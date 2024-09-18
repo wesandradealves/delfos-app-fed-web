@@ -10,7 +10,7 @@ export default function Header(props: any) {
   const pathname = usePathname();
 
   return (<Content data-component="Header" className="header w-full flex flex-col">
-    <Container className="mx-auto w-full flex items-center justify-between">
+    <Container className="mx-auto w-full flex flex-wrap items-center justify-between">
         <Logo compact={1} tag="h1" />
         <Navigation pathname={pathname} data={[
           {
@@ -26,7 +26,7 @@ export default function Header(props: any) {
             ]
           }        
         ]} />
-        <Toolbar className="flex-1 flex justify-end items-center flex">
+        <Toolbar className="flex-1 flex flex-wrap justify-end items-center flex">
           <UpdatedAt className="items-center flex">
             <Icon data="fa-solid fa-rotate" />
             <Text className="flex-1">

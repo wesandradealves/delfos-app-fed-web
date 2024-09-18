@@ -12,7 +12,7 @@ export const Content = styled.span`
         gap: 12px;
         line-height: 120%; /* 21.6px */    
         font-size: ${props => props.theme._fontSize.text.normal.normal5};
-        border-radius: ${props => props.theme._general.borderRadius.default};
+        border-radius: 8px;
         border: 1px transparent solid;
         &.primary {
             background-color: ${props => props.theme._colors.secondary.color300};

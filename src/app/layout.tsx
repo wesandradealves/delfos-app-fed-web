@@ -24,7 +24,7 @@ export default function RootLayout({
   
   return (
     <html lang="pt-br">
-      <body suppressHydrationWarning={true}>
+      <body className="overflow-hidden w-screen h-screen" suppressHydrationWarning={true}>
         <script async src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         <title>Delfos - Centro de Monitoramento de Clientes</title>

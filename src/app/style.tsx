@@ -5,6 +5,9 @@ export const GlobalStyle = createGlobalStyle`
         font-family: "Inter", sans-serif;
         font-optical-sizing: auto;  
         min-width: ${props => props.theme._breakpoints.desktop.lg};
+        #primary {
+            min-width: inherit
+        }
     }
 
     *,

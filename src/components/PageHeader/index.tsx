@@ -9,7 +9,7 @@ export default function PageHeader({
     ...props 
   }: PageHeaderProps) {
     return (
-      <Content className={`page-header flex items-center w-full`} data-component="PageHeader">
+      <Content className={`page-header flex items-center w-full flex-wrap`} data-component="PageHeader">
         {props?.icon && (<Icon data={props?.icon} />)}
 
         <Title>{children}</Title>

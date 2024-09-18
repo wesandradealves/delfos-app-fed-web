@@ -10,8 +10,9 @@
 html, body {
     background-color: #191B41;    
     color: white;
+    .pace {
+        .pace-progress {
+            background-color: #EBCF59;
+        }        
+    }    
 }
-
-.pace .pace-progress {
-    background-color: #EBCF59;
-}    

@@ -2,9 +2,9 @@
 
 export const fontSize = {
     display: {
-        display1: '56px',
+        display1: '3.5rem',
         display2: '3.25rem',
-        display3: '48px'
+        display3: '3rem'
     },
     text: {
         large: {
