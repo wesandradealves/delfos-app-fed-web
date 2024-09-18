@@ -6,7 +6,7 @@ export default function DynamicComponent(props: any) {
   const [importedComponent, setImportedComponent] = useState<ReactElement | null>(null);
 
   const importComponent = async () => {
-    const component = await import(`@/components/Indicators/${props?.componentName}/${props?.componentName}`);
+    const component = await import(`@/components/Indicators/${props?.componentName}`);
     const DynamicComponent = component.default;
     setImportedComponent(
       <DynamicComponent 

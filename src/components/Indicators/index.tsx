@@ -9,7 +9,7 @@ import Button from '@/components/Button';
 
 export default function Indicators(props: any) {
     return (
-        <Indicator className={`${props?.className} gap-y-6 gap-x-6 flex flex-col`}>
+        <Indicator data-component={props?.componentName} className={`${props?.className} gap-y-6 gap-x-6 flex flex-col`}>
             {props?.title && <Heading className='flex flex-col'>
                 <HeadingTop className='flex items-center justify-between'>
                     <Title className='flex items-center'>

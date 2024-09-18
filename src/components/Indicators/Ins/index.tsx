@@ -10,6 +10,6 @@ export default function Ins(props: any) {
     return (<>
         <Caption className='xl:justify-end'/>
         <Cards className='sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-7' />
-        <Geral className='xl:grid-cols-3' />
+        <Geral />
     </>);
 };

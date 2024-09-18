@@ -15,7 +15,11 @@ export default function Page(props: any) {
       fetchData('/data/data.json').then(response => {
         if(response && slug) {
           slug = slug?.replace("-", "_");
-          setData(response[slug])
+
+          let navItem = response?.navigation.find((item: any) => item?.label == 'Módulos' );
+          let data = navItem?.below.find((item: any) => item?.module == slug );
+
+          if(navItem && data) setData(data)
         }
       }).catch(error => console.error(error));      
     }

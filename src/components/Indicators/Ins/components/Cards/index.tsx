@@ -19,9 +19,9 @@ import CountUp from 'react-countup';
 
 export default function Cards(props: any) {
     return (<>
-        <Container className={`justify-between items-stretch flex-wrap gap-y-6 gap-x-6 grid grid-cols-1 ${props?.className}`}>
+        <Container className={`place-items-stretch justify-between items-stretch flex-wrap gap-y-6 gap-x-6 grid grid-cols-1 ${props?.className}`}>
             <Card ins={55}>
-                <CardInner className='flex flex-col'>
+                <CardInner className='h-full flex flex-col'>
                     <CardHeader className='flex items-center justify-between'>
                         <CardTitle>Pará</CardTitle>
                         <CardCaption className='flex justify-end items-center'>
@@ -41,7 +41,7 @@ export default function Cards(props: any) {
                 </CardInner>
             </Card>
             <Card ins={65}>
-                <CardInner className='flex flex-col'>
+                <CardInner className='h-full flex flex-col'>
                     <CardHeader className='flex items-center justify-between'>
                         <CardTitle>Pará</CardTitle>
                         <CardCaption className='flex justify-end items-center'>
@@ -59,7 +59,7 @@ export default function Cards(props: any) {
                 </CardInner>
             </Card>         
             <Card ins={75}>
-                <CardInner className='flex flex-col'>
+                <CardInner className='h-full flex flex-col'>
                     <CardHeader className='flex items-center justify-between'>
                         <CardTitle>Pará</CardTitle>
                         <CardCaption className='flex justify-end items-center'>
@@ -78,7 +78,7 @@ export default function Cards(props: any) {
                 </CardInner>
             </Card>   
             <Card ins={86}>
-                <CardInner className='flex flex-col'>
+                <CardInner className='h-full flex flex-col'>
                     <CardHeader className='flex items-center justify-between'>
                         <CardTitle>Pará</CardTitle>
                         <CardCaption className='flex justify-end items-center'>
@@ -96,7 +96,7 @@ export default function Cards(props: any) {
                 </CardInner>
             </Card>
             <Card ins={90}>
-                <CardInner className='flex flex-col'>
+                <CardInner className='h-full flex flex-col'>
                     <CardHeader className='flex items-center justify-between'>
                         <CardTitle>Pará</CardTitle>
                         <CardCaption className='flex justify-end items-center'>
@@ -114,7 +114,7 @@ export default function Cards(props: any) {
                 </CardInner>
             </Card>
             <Card ins={93}>
-                <CardInner className='flex flex-col'>
+                <CardInner className='h-full flex flex-col'>
                     <CardHeader className='flex items-center justify-between'>
                         <CardTitle>Pará</CardTitle>
                         <CardCaption className='flex justify-end items-center'>
@@ -132,7 +132,7 @@ export default function Cards(props: any) {
                 </CardInner>
             </Card>            
             <Card ins={55}>
-                <CardInner className='flex flex-col'>
+                <CardInner className='h-full flex flex-col'>
                     <CardHeader className='flex items-center justify-between'>
                         <CardTitle>Pará</CardTitle>
                         <CardCaption className='flex justify-end items-center'>
