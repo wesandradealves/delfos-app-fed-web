@@ -30,9 +30,9 @@ export default function Template({ children }: { children: React.ReactNode }) {
                 </Aside>      
                 <main className="flex-1 flex items-center justify-center">
                     <motion.div
-                        initial={{ x: -300, opacity: 0 }}
+                        initial={{ x: 0, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
-                        exit={{ x: 300, opacity: 0 }}
+                        exit={{ x: 0, opacity: 0 }}
                         transition={{
                             type: "spring",
                             stiffness: 260,

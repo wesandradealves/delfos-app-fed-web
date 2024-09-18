@@ -1,9 +1,10 @@
 "use client";
-import { Container, Content, Toolbar, UpdatedAt, Icon, Avatar, Text, Hello, Welcome, Headline } from "./style";
+import { Container, Content, Toolbar, UpdatedAt, Avatar, Text, Hello, Welcome, Headline } from "./style";
 import Logo from "@/components/Logo";
 import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import { usePathname } from 'next/navigation';
+import Icon from '@/components/Icon';
 
 export default function Header(props: any) {  
   const pathname = usePathname();
@@ -27,17 +28,17 @@ export default function Header(props: any) {
         ]} />
         <Toolbar className="flex-1 flex justify-end items-center flex">
           <UpdatedAt className="items-center flex">
-            <Icon className="fa-solid fa-rotate" />
+            <Icon data="fa-solid fa-rotate" />
             <Text className="flex-1">
               <span>Atualizado em:</span>
               26 Jun 2024 às 16:20
             </Text>
           </UpdatedAt>
           <Link href="#">
-            <Icon className="fa-solid fa-bell" />
+            <Icon data="fa-solid fa-bell" />
           </Link>   
           <Link href="#">
-            <Icon className="fa-solid fa-right-from-bracket" />
+            <Icon data="fa-solid fa-right-from-bracket" />
           </Link>  
             <Link href="/dashboard">
             <Avatar className="flex justify-center items-center">

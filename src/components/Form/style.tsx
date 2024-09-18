@@ -2,7 +2,7 @@ import styled, {css, createGlobalStyle} from "styled-components";
 
 
 export const Form = styled.form`   
-    padding: ${props => props.theme.general.gaps.default};
+    padding: ${props => props.theme._general.gaps.default};
     svg {
         max-width: 100%;
     }

@@ -6,7 +6,7 @@ export const Content = styled.div`
 `;
 
 export const Container = styled.div`   
-    padding: ${props => props.theme.general.gaps.default};
+    padding: ${props => props.theme._general.gaps.default};
     padding-top: 0;
 `;
 
