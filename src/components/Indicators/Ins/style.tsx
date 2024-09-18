@@ -6,11 +6,9 @@ interface Typo {
 }
 
 export const Cards = styled.ul`   
-    margin: 0 -12px -24px;
 `;
 
 export const Card = styled.li<Typo>`  
-    padding: 0 12px 24px;
     ${(props) => props?.ins && css`
         ${props.ins < 85 && `color: ${props.theme._colors.error.color400};`}
         ${(props.ins >= 85 && props.ins <= 90) && `color: ${props.theme._colors.warning.color300};`}

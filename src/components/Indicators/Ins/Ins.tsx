@@ -30,8 +30,8 @@ export default function Ins(props: any) {
                 <span className="flex-1">Coletivas</span>
             </CaptionItem>
         </Caption>
-        <Cards className='flex justify-between items-stretch flex-wrap'>
-            <Card ins={55} className='w-full md:w-3/6 lg:w-2/6 2xl:flex-1'>
+        <Cards className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-7 gap-y-6 gap-x-6 justify-between items-stretch flex-wrap'>
+            <Card ins={55}>
                 <CardInner className='flex flex-col'>
                     <CardHeader className='flex items-center justify-between'>
                         <CardTitle>Pará</CardTitle>
@@ -51,7 +51,7 @@ export default function Ins(props: any) {
                     </CardContent>
                 </CardInner>
             </Card>
-            <Card ins={65} className='w-full md:w-3/6 lg:w-2/6 2xl:flex-1'>
+            <Card ins={65}>
                 <CardInner className='flex flex-col'>
                     <CardHeader className='flex items-center justify-between'>
                         <CardTitle>Pará</CardTitle>
@@ -69,7 +69,7 @@ export default function Ins(props: any) {
                     </CardContent>
                 </CardInner>
             </Card>         
-            <Card ins={75} className='w-full md:w-3/6 lg:w-2/6 2xl:flex-1'>
+            <Card ins={75}>
                 <CardInner className='flex flex-col'>
                     <CardHeader className='flex items-center justify-between'>
                         <CardTitle>Pará</CardTitle>
@@ -88,7 +88,7 @@ export default function Ins(props: any) {
                     </CardContent>
                 </CardInner>
             </Card>   
-            <Card ins={86} className='w-full md:w-3/6 lg:w-2/6 2xl:flex-1'>
+            <Card ins={86}>
                 <CardInner className='flex flex-col'>
                     <CardHeader className='flex items-center justify-between'>
                         <CardTitle>Pará</CardTitle>
@@ -106,7 +106,7 @@ export default function Ins(props: any) {
                     </CardContent>
                 </CardInner>
             </Card>
-            <Card ins={90} className='w-full md:w-3/6 lg:w-2/6 2xl:flex-1'>
+            <Card ins={90}>
                 <CardInner className='flex flex-col'>
                     <CardHeader className='flex items-center justify-between'>
                         <CardTitle>Pará</CardTitle>
@@ -124,7 +124,7 @@ export default function Ins(props: any) {
                     </CardContent>
                 </CardInner>
             </Card>
-            <Card ins={93} className='w-full md:w-3/6 lg:w-2/6 2xl:flex-1'>
+            <Card ins={93}>
                 <CardInner className='flex flex-col'>
                     <CardHeader className='flex items-center justify-between'>
                         <CardTitle>Pará</CardTitle>
@@ -142,7 +142,7 @@ export default function Ins(props: any) {
                     </CardContent>
                 </CardInner>
             </Card>            
-            <Card ins={55} className='w-full md:w-3/6 lg:w-2/6 2xl:flex-1'>
+            <Card ins={55}>
                 <CardInner className='flex flex-col'>
                     <CardHeader className='flex items-center justify-between'>
                         <CardTitle>Pará</CardTitle>

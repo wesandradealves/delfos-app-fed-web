@@ -1,6 +1,6 @@
 import styled, {css, createGlobalStyle} from "styled-components";
 import bg from '@/assets/img/bg.png';
-
+import bgFull from '@/assets/img/bg.jpg';
 
 export const GlobalStyle = createGlobalStyle`
 `;
@@ -10,6 +10,24 @@ export const Content = styled.div`
         .btn {
             min-width: 150px;
         }
+    }
+    @media screen and (max-width: ${props => props.theme._breakpoints.desktop.xl}) {    
+        background: url(${bgFull.src}) center 0 / cover no-repeat;
+        * {
+            position: inherit;
+            z-index: 2;
+        }
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: ${props => props.theme._colors.primary.default};
+            content: '';
+            z-index: 1;
+            opacity: .9;
+        }    
     }
 `;
 

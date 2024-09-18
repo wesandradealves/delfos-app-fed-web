@@ -1,7 +1,6 @@
 import styled, {css, createGlobalStyle} from "styled-components";
 import bg from '@/assets/img/bg.jpg';
 
-
 export const Content = styled.div`   
     line-height: 1.4;
     color: ${props => props.theme._colors.secondary.default};
