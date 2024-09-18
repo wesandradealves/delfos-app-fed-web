@@ -26,7 +26,7 @@ export default function Header(props: any) {
             ]
           }        
         ]} />
-        <Toolbar className="flex-1 flex flex-wrap justify-end items-center flex">
+        <Toolbar className="flex flex-wrap justify-end items-center flex">
           <UpdatedAt className="items-center hidden xl:flex">
             <Icon data="fa-solid fa-rotate" />
             <Text className="flex-1">
@@ -34,10 +34,10 @@ export default function Header(props: any) {
               26 Jun 2024 às 16:20
             </Text>
           </UpdatedAt>
-          <Link href="#">
+          <Link className="hidden md:block" href="#">
             <Icon data="fa-solid fa-bell" />
           </Link>   
-          <Link href="#">
+          <Link className="hidden md:block" href="#">
             <Icon data="fa-solid fa-right-from-bracket" />
           </Link>  
             <Link href="/dashboard">

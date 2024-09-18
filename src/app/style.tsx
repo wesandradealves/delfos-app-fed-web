@@ -4,7 +4,7 @@ export const GlobalStyle = createGlobalStyle`
     html, body {
         font-family: "Inter", sans-serif;
         font-optical-sizing: auto;  
-        min-width: ${props => props.theme._breakpoints.mobile.md};
+        min-width: ${props => props.theme._breakpoints.mobile.xs};
         #primary {
             min-width: inherit
         }

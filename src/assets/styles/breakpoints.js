@@ -11,7 +11,7 @@ export const breakpoints = {
     mobile: {
         md: '768px',
         sm: '576px',
-        xs: '414px',
-        xxs: '375px'      
+        xs: '430px',
+        xxs: '360px'      
     }    
 };
