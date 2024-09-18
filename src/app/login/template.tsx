@@ -16,7 +16,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
             }}
             >          
             <Content className="flex h-full w-full items-stretch">
-                <Aside className="flex w-1/2 xl:w-1/3 justify-center items-end flex-col">
+                <Aside className="hidden xl:flex w-1/2 xl:w-1/3 justify-center items-end flex-col">
                     <Title className="title">
                         Monitoramento<br/>
                         completo do<br/>

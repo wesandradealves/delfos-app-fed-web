@@ -6,10 +6,11 @@ interface Typo {
 }
 
 export const Cards = styled.ul`   
-    gap: 24px;
+    margin: 0 -12px -24px;
 `;
 
 export const Card = styled.li<Typo>`  
+    padding: 0 12px 24px;
     ${(props) => props?.ins && css`
         ${props.ins < 85 && `color: ${props.theme._colors.error.color400};`}
         ${(props.ins >= 85 && props.ins <= 90) && `color: ${props.theme._colors.warning.color300};`}
@@ -74,6 +75,11 @@ export const CaptionItem = styled.li<Typo>`
     .icon {
         font-size: ${props => props.theme._fontSize.text.normal.normal1};
     }
+    span {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }   
     &::before {
         height: 12px;
         width: 12px;

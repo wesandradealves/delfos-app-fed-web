@@ -35,7 +35,10 @@ export const Aside = styled.aside`
 `;
 
 export const Title = styled.h1`   
-    font-size: ${props => props.theme._fontSize.display.display2};
+    font-size: ${props => props.theme._fontSize.text.medium.medium3};
+    @media screen and (min-width: ${props => props.theme._breakpoints.desktop.lg}) {
+        font-size: ${props => props.theme._fontSize.display.display2};
+    }
     color: ${props => props.theme._colors.secondary.default};
     line-height: 130%;
     font-weight: 600;

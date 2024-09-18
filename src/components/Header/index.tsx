@@ -27,7 +27,7 @@ export default function Header(props: any) {
           }        
         ]} />
         <Toolbar className="flex-1 flex flex-wrap justify-end items-center flex">
-          <UpdatedAt className="items-center flex">
+          <UpdatedAt className="items-center hidden xl:flex">
             <Icon data="fa-solid fa-rotate" />
             <Text className="flex-1">
               <span>Atualizado em:</span>
