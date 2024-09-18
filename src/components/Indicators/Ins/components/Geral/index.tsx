@@ -13,7 +13,7 @@ import Tooltip from '@/components/Tooltip';
 
 export default function Geral(props: any) {
     return (<>
-        <Container className={`grid gap-y-6 gap-x-4 grid-cols-1 ${props?.className}`}>
+        <Container className={`grid gap-y-6 gap-x-6 grid-cols-1 ${props?.className}`}>
             <GeralItem>
                 <GeralItemInner className="flex items-center justify-between">
                     <GeralTitle className='flex items-center justify-between'>

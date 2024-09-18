@@ -20,7 +20,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  console.log(theme);
+  // console.log(theme);
   
   return (
     <html lang="pt-br">

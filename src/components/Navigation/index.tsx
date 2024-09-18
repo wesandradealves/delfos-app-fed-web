@@ -38,7 +38,7 @@ export default function Navigation(props: any) {
                 {item?.below && (
                   <Submenu className="submenu hidden">
                     <SubmenuNav className="block w-full">
-                      {item?.below.map((subItem: any, subIndex: any) => (
+                      {item?.below.map((subItem: any, index: any) => (
                         <SubmenuItem 
                           className={classNames(
                             `flex flex-wrap items-center`,
@@ -46,7 +46,7 @@ export default function Navigation(props: any) {
                               'current': props?.pathname == subItem?.url
                             }
                           )}
-                          key={subIndex}
+                          key={index}
                         >
                           <Link className="flex flex-wrap items-center link" href={subItem?.url}>
                             {item?.icon && (<Icon data={subItem?.icon} />)}                          

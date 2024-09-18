@@ -1,9 +1,8 @@
 import styled, {css, createGlobalStyle} from "styled-components";
 
 
-export const Content = styled.div`
+export const Content = styled.section`
     color: white;
-    margin-bottom: 16px;
     gap: 16px 12px;
     .icon {
         width: auto;
