@@ -23,6 +23,5 @@ export const Headline = styled.p`
 export const Container = styled.div`   
     padding: 32px 40px;
     padding-top: 0;
-    gap: 8px 24px;
     position: relative;
 `;

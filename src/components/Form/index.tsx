@@ -18,9 +18,9 @@ export default function Forms(props: any) {
 
     const onSubmit: SubmitHandler<Inputs> = (data) => router.push(`/dashboard`, { scroll: true });;
     
-    return (<Form data-component="form" className="flex items-center justify-center flex-col form" onSubmit={handleSubmit(onSubmit)}>
+    return (<Form data-component="form" className="flex items-center gap-y-14 gap-x-14 justify-center flex-col form" onSubmit={handleSubmit(onSubmit)}>
         <Logo />
-        <FormGroup className="flex flex-col">
+        <FormGroup className="flex gap-y-8 gap-x-8 flex-col">
             <Button className="primary">
                 Entrar
             </Button>

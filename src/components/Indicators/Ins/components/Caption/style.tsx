@@ -5,11 +5,9 @@ interface Typo {
 }
 
 export const Container = styled.ul`   
-    gap: 32px;
 `;
 
 export const CaptionItem = styled.li<Typo>`
-    gap: 12px;
     font-size: ${props => props.theme._fontSize.text.normal.normal6};
     font-weight: 600;
     line-height: 126%;   

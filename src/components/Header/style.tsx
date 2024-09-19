@@ -6,7 +6,6 @@ export const Content = styled.header`
 `;
 
 export const Toolbar = styled.div`   
-    gap: 0 12px;
     a {
         &:hover {
             color: ${props => props.theme._colors.secondary.color300};
@@ -18,7 +17,6 @@ export const Toolbar = styled.div`
 `;
 
 export const UpdatedAt = styled.div`   
-    gap: 0 12px;
     padding-right: 48px;
 `;
 
@@ -53,7 +51,6 @@ export const Text = styled.p`
 
 export const Container = styled.div`   
     padding: 32px 40px;
-    gap: 0 24px;
     position: relative;
 `;
 

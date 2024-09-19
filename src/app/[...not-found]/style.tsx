@@ -4,7 +4,6 @@ import bg from '@/assets/img/bg.jpg';
 export const Content = styled.div`   
     line-height: 1.4;
     color: ${props => props.theme._colors.secondary.default};
-    gap: 12px 0;
     background: url(${bg.src}) center 0 / cover no-repeat;
     > * {
         position: relative;

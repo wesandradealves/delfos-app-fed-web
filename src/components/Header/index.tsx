@@ -21,11 +21,11 @@ export default function Header(props: any) {
   }, [navigation]);
 
   return (<Content data-component="Header" className="header w-full flex flex-col">
-    <Container className="mx-auto w-full flex flex-wrap items-center justify-between">
+    <Container className="mx-auto w-full flex flex-wrap items-center justify-between gap-x-6">
         <Logo compact={1} tag="h1" />
         {navigation && <Navigation pathname={pathname} data={navigation} />}
-        <Toolbar className="flex flex-wrap justify-end items-center flex">
-          <UpdatedAt className="items-center hidden xl:flex">
+        <Toolbar className="flex gap-y-3 gap-x-3 flex-wrap justify-end items-center flex">
+          <UpdatedAt className="items-center gap-y-3 gap-x-3 hidden xl:flex">
             <Icon data="fa-solid fa-rotate" />
             <Text className="flex-1">
               <span>Atualizado em:</span>

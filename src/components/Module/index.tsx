@@ -4,7 +4,7 @@ import Indicators from "@/components/Indicators";
 
 export default function Module(props: any) {
   return (
-    <Container data-component="Module" className="w-full flex flex-col">
+    <Container data-component="Module" className="w-full gap-x-4 gap-y-4 flex flex-col">
       <PageHeader icon={props?.data?.icon}>{props?.data?.label}</PageHeader>  
 
       {props?.data?.indicators && (

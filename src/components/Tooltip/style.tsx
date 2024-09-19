@@ -45,5 +45,13 @@ export const Content = styled.p`
     &:hover ${Text} {
         display: block
     }
+    .icon {
+        height: 22px;
+        width: 22px;
+        border-radius: 999px;
+        background-color: ${props => props.theme._colors.primary.color200};
+        color: ${props => props.theme._colors.primary.default};
+        font-size: ${props => props.theme._fontSize.text.normal.normal5};    
+    }        
 `;
 

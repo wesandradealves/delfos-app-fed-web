@@ -17,7 +17,7 @@ export default function Button({
       <Content className="flex">
         <Tag 
           data-component="Button"
-          className={`btn flex items-center text-center justify-center ${className}`}
+          className={`btn gap-y-3 gap-x-3 flex items-center text-center justify-center ${className}`}
           {...(tag === 'a' && href ? { href } : {})} 
           {...props} // Spread remaining props
         >

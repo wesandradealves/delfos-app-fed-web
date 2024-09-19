@@ -3,7 +3,6 @@ import styled, {css, createGlobalStyle} from "styled-components";
 
 export const Content = styled.section`
     color: white;
-    gap: 16px 12px;
     .icon {
         width: auto;
         color: ${props => props.theme._colors.secondary.color300};

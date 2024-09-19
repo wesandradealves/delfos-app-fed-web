@@ -6,7 +6,6 @@ export const Nav = styled.nav`
 `;
 
 export const NavList = styled.ul`   
-    gap: 0 16px;
 `;
 
 export const Icon = styled.i`   
@@ -48,7 +47,6 @@ export const SubmenuItem = styled.li`
     color: white;
 
     >  .link {
-        gap: 0 12px;
     }
 
     .icon {
@@ -105,7 +103,6 @@ export const NavItem = styled.li`
     }       
 
     > .link {
-        gap: 12px;
         padding: 16px 20px;
     }
 

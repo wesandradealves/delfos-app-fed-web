@@ -18,18 +18,9 @@ export const GeralItemInner = styled.div`
 `;
 
 export const GeralTitle = styled.h3`  
-    gap: 12px;
     font-size: ${props => props.theme._fontSize.text.normal.normal2};
     font-weight: 600;
-    line-height: 120%; /* 28.8px */    
-    .icon {
-        height: 22px;
-        width: 22px;
-        border-radius: 999px;
-        background-color: ${props => props.theme._colors.primary.color200};
-        color: ${props => props.theme._colors.primary.default};
-        font-size: ${props => props.theme._fontSize.text.normal.normal5};    
-    }    
+    line-height: 120%; /* 28.8px */      
 `;
 
 export const GeralText = styled.p`   
@@ -59,12 +50,6 @@ export const GeralStatus = styled.span<Typo>`
     display: block;
     border-radius: 999px;
     background-color: ${(props) => props.theme._colors.success.color400};
-    &:first-child {
-        margin-right: 10px;
-    }
-    &:last-child {
-        margin-left: 10px;
-    }
     ${(props) => props?.status && css`
         ${props.status == 'critical' && `background-color: ${props.theme._colors.error.color400};`}
         ${props.status == 'alert' && `background-color: ${props.theme._colors.warning.color300};`}

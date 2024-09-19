@@ -9,7 +9,6 @@ export const Content = styled.span`
         text-align: center;
         min-width: 116px;
         font-weight: 600;
-        gap: 12px;
         line-height: 120%; /* 21.6px */    
         font-size: ${props => props.theme._fontSize.text.normal.normal5};
         border-radius: 8px;

@@ -20,7 +20,6 @@ export const CardInner = styled.div`
     padding: 12px;
     background-color: ${props => props.theme._colors.dark.color700};
     border-radius: 8px;  
-    gap: 28px 0;
 `; 
 
 export const CardHeader = styled.div`   
@@ -30,7 +29,6 @@ export const CardContent = styled.div`
 `; 
 
 export const CardCaption = styled.div`  
-    gap: 30px;
     .icon {
         font-size: ${props => props.theme._fontSize.text.normal.normal1};
     }
@@ -58,5 +56,4 @@ export const CardSubtitle = styled.small`
     font-size: ${props => props.theme._fontSize.text.normal.normal7};
     font-weight: 600;
     line-height: 120%;   
-    margin-bottom: 8px;
 `; 
