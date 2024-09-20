@@ -48,11 +48,11 @@ export default function Tables(props: any) {
 
   return (<>
     {data && <Table className="flex flex-col">
-      <Thead className="flex w-full flex-wrap gap-y-3 gap-x-3">
+      <Thead className="hidden lg:flex w-full gap-y-3 gap-x-3">
         {keys.map((key: any, index: any) => (
-          <Col className="flex-1 flex items-center gap-y-3 gap-x-3" key={key || index}>
+          <Col className="flex-1 overflow-hidden flex items-center gap-y-3 gap-x-3" key={key || index}>
             <Tooltip 
-              className="hidden 2xl:block"
+              className="hidden lg:block"
               position="top"
               description="Etiam mattis rutrum justo, eu hendrerit metus semper sit amet. Donec tincidunt porta dolor. Nulla facilisi. Vestibulum convallis elementum convallis. In vel congue arcu, ut bibendum neque. Donec auctor convallis lectus sit amet congue. Donec a eros urna. Fusce vitae interdum risus, vel faucibus magna. Nulla facilisi." 
             />               
