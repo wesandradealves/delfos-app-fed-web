@@ -3,7 +3,7 @@ import { Content, Title, Collapser } from "@/components/Collapse/style";
 import { CollapseProps } from "@/components/Collapse/typo";
 import Tooltip from "@/components/Tooltip";
 import Icon from "@/components/Icon";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 
 export default function Collapse({ 
   children, 
@@ -31,7 +31,9 @@ export default function Collapse({
         </Collapser>
       </Title>
 
-      {expanded && <>{children}</>}  
+      {expanded &&
+       <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
+      }  
     </Content>
   );
 }

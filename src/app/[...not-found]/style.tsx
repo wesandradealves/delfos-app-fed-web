@@ -19,7 +19,6 @@ export const Content = styled.div`
         content: '';
         z-index: 1;
         opacity: .85;
-        backdrop-filter: blur(40px);  
     }        
     .btn {
         box-shadow: 0px 19px 31px -17px rgba(255,255,255,.2)

@@ -3,6 +3,7 @@ import { Content, Dashboard, Container } from "@/app/dashboard/style";
 import Header from "@/components/Header";
 import Hello from "@/components/Hello";
 import { motion } from "framer-motion";
+import { Suspense } from "react";
 import { CustomScroll } from "react-custom-scroll";
 
 export default function Template({ children }: { children: React.ReactNode }) {
@@ -24,7 +25,9 @@ export default function Template({ children }: { children: React.ReactNode }) {
                     <CustomScroll className="w-full" heightRelativeToParent="100%">
                         <Hello />
                         <Container className="flex flex-wrap items-stretch justify-start">
-                            {children}
+                            <Suspense fallback={<div>Loading...</div>}>
+                                {children}
+                            </Suspense>
                         </Container>
                     </CustomScroll>
                 </Dashboard>

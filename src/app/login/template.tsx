@@ -1,6 +1,7 @@
 "use client";
 import { Aside, Title, Arrow, Content } from "@/app/login/style";
 import { motion } from "framer-motion";
+import { Suspense } from "react";
 
 export default function Template({ children }: { children: React.ReactNode }) {
     return (
@@ -39,7 +40,9 @@ export default function Template({ children }: { children: React.ReactNode }) {
                             damping: 100,
                         }}
                         > 
-                        {children}
+                        <Suspense fallback={<div>Loading...</div>}>
+                            {children}
+                        </Suspense>
                     </motion.div>
                 </main>
             </Content>

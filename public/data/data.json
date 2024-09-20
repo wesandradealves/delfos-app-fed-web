@@ -20,7 +20,66 @@
               "tooltip": "Etiam mattis rutrum justo, eu hendrerit metus semper sit amet. Donec tincidunt porta dolor. Nulla facilisi. Vestibulum convallis elementum convallis. In vel congue arcu, ut bibendum neque. Donec auctor convallis lectus sit amet congue. Donec a eros urna. Fusce vitae interdum risus, vel faucibus magna. Nulla facilisi.",
               "description": "Índice de satisfação do serviço. Abaixo de 85% é um cenário crítico. Informações em tempo real.",
               "componentName": "Ins",
-              "className": "w-full"           
+              "className": "w-full",
+              "_links": {
+                "self": [
+                  {
+                    "href": "https://example.com/wp-json/wp/v2/posts/1"
+                  }
+                ],
+                "collection": [
+                  {
+                    "href": "https://example.com/wp-json/wp/v2/posts"
+                  }
+                ],
+                "about": [
+                  {
+                    "href": "https://example.com/wp-json/wp/v2/types/post"
+                  }
+                ],
+                "author": [
+                  {
+                    "embeddable": true,
+                    "href": "https://example.com/wp-json/wp/v2/users/1"
+                  }
+                ],
+                "replies": [
+                  {
+                    "embeddable": true,
+                    "href": "https://example.com/wp-json/wp/v2/comments?post=1"
+                  }
+                ],
+                "version-history": [
+                  {
+                    "count": 1,
+                    "href": "https://example.com/wp-json/wp/v2/posts/1/revisions"
+                  }
+                ],
+                "wp:attachment": [
+                  {
+                    "href": "https://example.com/wp-json/wp/v2/media?parent=1"
+                  }
+                ],
+                "wp:term": [
+                  {
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://example.com/wp-json/wp/v2/categories?post=1"
+                  },
+                  {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://example.com/wp-json/wp/v2/tags?post=1"
+                  }
+                ],
+                "curies": [
+                  {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                  }
+                ]
+              }
             }     
           ]          
         }  

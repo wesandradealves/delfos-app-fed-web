@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, ReactElement } from 'react';
+import React, { useState, useEffect, ReactElement, Suspense } from 'react';
 
 export default function DynamicComponent(props: any) {
   const [importedComponent, setImportedComponent] = useState<ReactElement | null>(null);
@@ -14,12 +14,13 @@ export default function DynamicComponent(props: any) {
         title={props?.title}
         openTickets={props?.openTickets}
         description={props?.description}
-        className={props?.className} />);
+        className={props?.className} />
+    );
   };  
 
   useEffect(() => {
     importComponent();
   });
 
-  return (importedComponent && <>{importedComponent}</>);
+  return (importedComponent && <Suspense fallback={<div>Loading...</div>}>{importedComponent}</Suspense>);
 };

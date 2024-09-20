@@ -47,21 +47,21 @@ export default function Geral(props: any) {
                         <Column className='flex flex-col justify-center '>
                             <GeralText className='flex gap-y-3.5 gap-x-3.5 items-center '>
                                 <GeralStatus status="critical" />
-                                <Column><CountUp end={3} /></Column>
+                                <CountUp end={3} />
                             </GeralText>
                             <GeralSubtitle>Crítico</GeralSubtitle>
                         </Column>
                         <Column className='flex flex-col justify-center '>
                             <GeralText className='flex gap-y-3.5 gap-x-3.5 items-center '>
                                 <GeralStatus status="alert" />
-                                <Column><CountUp end={2} /></Column>
+                                <CountUp end={2} />
                             </GeralText>
                             <GeralSubtitle>Alerta</GeralSubtitle>
                         </Column>
                         <Column className='flex flex-col justify-center '>
                             <GeralText className='flex gap-y-3.5 gap-x-3.5 items-center '>
                                 <GeralStatus status="non-critical" />
-                                <Column><CountUp end={2} /></Column>
+                                <CountUp end={2} />
                             </GeralText>
                             <GeralSubtitle>Não crítico</GeralSubtitle>
                         </Column>                        
@@ -80,21 +80,21 @@ export default function Geral(props: any) {
                     <GeralContent className='flex gap-y-7 gap-x-14 items-stretch lg:justify-end flex-1 flex-col sm:flex-row'>
                         <Column className='flex flex-col justify-center '>
                             <GeralText className='flex gap-y-3.5 gap-x-3.5 items-center '>
-                                <Column><CountUp end={6548} /></Column>
+                                <CountUp end={6548} />
                             </GeralText>
                             <GeralSubtitle>Previsto</GeralSubtitle>
                         </Column>
                         <Column className='flex flex-col justify-center '>
                             <GeralText className='flex gap-y-3.5 gap-x-3.5 items-center '>
                                 <GeralStatus />
-                                <Column><CountUp end={2789} /></Column>
+                                <CountUp end={2789} />
                             </GeralText>
                             <GeralSubtitle>Real</GeralSubtitle>
                         </Column>
                         <Column className='flex flex-col justify-center '>
                             <GeralText className='flex gap-y-3.5 gap-x-3.5 items-center '>
                                 <GeralStatus />
-                                <Column><CountUp end={60} />%</Column>
+                                <CountUp end={60} />%
                             </GeralText>
                             <GeralSubtitle>Status</GeralSubtitle>
                         </Column>                        
