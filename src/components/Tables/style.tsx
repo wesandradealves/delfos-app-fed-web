@@ -49,4 +49,7 @@ export const Tbody = styled.div`
 
 export const Thead = styled.div`   
     padding: 0 12px;
+    ${Col} {
+        padding-top: 16px
+    }    
 `;
